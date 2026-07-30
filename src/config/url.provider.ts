@@ -1,0 +1,1 @@
+export const baseURL = 'https://shop700415.horoshop.ua';
