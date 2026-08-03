@@ -1,9 +1,9 @@
 import { type AxiosResponse } from 'axios';
 import type { ProfileData } from '../dto/profile.dto';
 import { UrlProvider } from '../proveders/url.provider';
-import { authHeaders, toFormBody } from './form';
-import { httpClient } from './http.client';
-import { getProfileSession } from './session';
+import { authHeaders, toFormBody } from '../base/form';
+import { httpClient } from '../base/http.client';
+import { getProfileSession } from '../base/session';
 
 type ProfileSaveOptions = {
   csrfToken?: string;

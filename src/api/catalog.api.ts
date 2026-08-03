@@ -1,5 +1,5 @@
 import type { CatalogResponse } from '../dto/catalog.dto';
-import { getPageSession } from './session';
+import { getPageSession } from '../base/session';
 
 export class CatalogApi {
   async getElectronics(): Promise<CatalogResponse> {

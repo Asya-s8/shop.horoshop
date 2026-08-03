@@ -1,8 +1,8 @@
 import type { SignUpData, SignUpOptions, SignUpResult } from '../dto/sign-up.dto';
 import { UrlProvider } from '../proveders/url.provider';
-import { authHeaders, toFormBody } from './form';
-import { httpClient } from './http.client';
-import { getSignupSession, mergeCookies } from './session';
+import { authHeaders, toFormBody } from '../base/form';
+import { httpClient } from '../base/http.client';
+import { getSignupSession, mergeCookies } from '../base/session';
 
 export class AuthApi {
   async signUp(
