@@ -1,9 +1,13 @@
-import { type AxiosResponse } from 'axios';
-import { httpClient } from './http.client';
-import { UrlProvider } from '../proveders/url.provider';
+import type { CatalogResponse } from '../dto/catalog.dto';
+import { getPageSession } from './session';
 
 export class CatalogApi {
-  getElectronics(): Promise<AxiosResponse> {
-    return httpClient.get(UrlProvider.electronics());
+  async getElectronics(): Promise<CatalogResponse> {
+    const page = await getPageSession('/electronics/');
+
+    return {
+      status: page.status,
+      data: page.html,
+    };
   }
 }

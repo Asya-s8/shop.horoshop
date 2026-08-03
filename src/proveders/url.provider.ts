@@ -8,4 +8,16 @@ export class UrlProvider {
   static electronics(): string {
     return `${this.baseURL}/electronics/`;
   }
+
+  static signUp(): string {
+    return `${this.baseURL}/security/sign_up/`;
+  }
+
+  static profile(): string {
+    return `${this.baseURL}/profile/`;
+  }
+
+  static profileSave(): string {
+    return `${this.baseURL}/profile/save/`;
+  }
 }
