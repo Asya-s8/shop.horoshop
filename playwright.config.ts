@@ -21,7 +21,11 @@ export default defineConfig({
     {
       name: 'chromium',
       testMatch: /tests\/ui\/.*\.spec\.ts/,
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        locale: 'uk-UA',
+      },
     },
   ],
 });

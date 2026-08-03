@@ -25,9 +25,11 @@
   "homepage": "https://github.com/Asya-s8/shop.horoshop#readme",
   "devDependencies": {
     "@playwright/test": "^1.62.0",
+    "@types/chance": "^1.1.8",
     "@types/node": "^26.1.2"
   },
   "dependencies": {
-    "axios": "^1.19.0"
+    "axios": "^1.19.0",
+    "chance": "^1.1.13"
   }
 }
